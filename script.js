@@ -53,3 +53,13 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 window.addEventListener('resize', updateNavigation);
 updateNavigation();
+
+// Respect visitors who prefer reduced motion while keeping playback controls available.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+function applyFlowMotionPreference() {
+  document.querySelectorAll('.flow-video').forEach((video) => {
+    if (reducedMotion.matches) video.pause();
+  });
+}
+applyFlowMotionPreference();
+if (reducedMotion.addEventListener) reducedMotion.addEventListener('change', applyFlowMotionPreference);

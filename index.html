@@ -7,7 +7,7 @@
   <meta name="description" content="Yue Xu, Ph.D. student in Civil Engineering at South China University of Technology. Research in urban wind engineering, CFD, neural operators and wind-aware UAV path planning.">
   <title>Yue Xu | Urban Wind Engineering</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23173b61'/%3E%3Cpath d='M7 8l5 8 5-8M12 16v8M19 16l7 8m0-8l-7 8' fill='none' stroke='white' stroke-width='2.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20261009-2">
+  <link rel="stylesheet" href="./styles.css?v=20261020-video-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -61,11 +61,21 @@
         <p class="flow-intro">Beyond equations and simulations, vortices and wakes reveal the hidden elegance of fluid motion.</p>
         <div class="flow-gallery">
           <figure class="flow-figure">
-            <img src="./assets/flow-side.avif" alt="Vertical section showing separated flow and a turbulent wake behind a rectangular obstacle" width="800" height="360" loading="lazy" decoding="async">
+            <div class="flow-media">
+              <video class="flow-video" autoplay muted loop playsinline controls preload="metadata" poster="./assets/flow-side.avif" width="1440" height="648" aria-label="Animated vertical velocity-field section showing the turbulent wake behind a rectangular obstacle">
+                <source src="./assets/NSRFG_y0_rightlegend.mp4" type="video/mp4">
+                <p>Video playback is not supported. <a href="./assets/NSRFG_y0_rightlegend.mp4">Watch the vertical flow animation</a>.</p>
+              </video>
+            </div>
             <figcaption>Vertical section <span>·</span> Wake structures</figcaption>
           </figure>
           <figure class="flow-figure">
-            <img src="./assets/flow-plan.avif" alt="Horizontal section showing a turbulent wake developing downstream of a square obstacle" width="800" height="427" loading="lazy" decoding="async">
+            <div class="flow-media">
+              <video class="flow-video" autoplay muted loop playsinline controls preload="metadata" poster="./assets/flow-plan.avif" width="1440" height="768" aria-label="Animated horizontal velocity-field section showing the development of a wake behind a square obstacle">
+                <source src="./assets/NSRFG_z32_rightlegend.mp4" type="video/mp4">
+                <p>Video playback is not supported. <a href="./assets/NSRFG_z32_rightlegend.mp4">Watch the horizontal flow animation</a>.</p>
+              </video>
+            </div>
             <figcaption>Horizontal section <span>·</span> Flow patterns</figcaption>
           </figure>
         </div>
@@ -153,6 +163,6 @@
     </main>
   </div>
   <p id="copy-status" role="status" aria-live="polite" class="sr-only"></p>
-  <script src="./script.js"></script>
+  <script src="./script.js?v=20261020-video-1"></script>
 </body>
 </html>
